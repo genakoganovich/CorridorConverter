@@ -14,7 +14,7 @@ public class CorridorConverter {
         stackImagingEntries = new ArrayList<>();
         zomfCorridorEntries = new ArrayList<>();
     }
-    public void read() {
+    public void readStackImagingCorridor() {
         String name = "stack_imaging_corridor.corr";
         File file = new File(name);
         try {
@@ -38,7 +38,7 @@ public class CorridorConverter {
             e.printStackTrace();
         }
     }
-    public void write() {
+    public void writeZomfCorridor() {
         String name = "zomf_corridor.corr";
         File file = new File(name);
         try {
@@ -53,7 +53,7 @@ public class CorridorConverter {
             e.printStackTrace();
         }
     }
-    public void convert(double a, double deltaV, double deltaA) {
+    public void convertStackImagingToZomfCorridor(double a, double deltaV, double deltaA) {
         for(StackImagingEntry entry: stackImagingEntries) {
             zomfCorridorEntries.add(
                     new ZomfCorridorEntry(
