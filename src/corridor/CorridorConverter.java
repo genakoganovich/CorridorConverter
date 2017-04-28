@@ -15,7 +15,7 @@ public class CorridorConverter {
         zomfCorridorEntries = new ArrayList<>();
     }
     public void readStackImagingCorridor() {
-        String name = "stack_imaging_corridor.corr";
+        String name = "stack_imaging_corridor_input.corr";
         File file = new File(name);
         try {
             Scanner scanner = new Scanner(file);
