@@ -1,5 +1,8 @@
 package corridor;
 
+import corridor.model.StackImagingEntry;
+import corridor.model.ZomfCorridorEntry;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
